@@ -4,7 +4,7 @@ import { switchMap, map, catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { loadUser, loadUserSuccess, loadUserFailure } from './user.actions';
-import { User as User } from './app.state';
+import { User } from './user.model';
 
 @Injectable()
 export class UserEffects {

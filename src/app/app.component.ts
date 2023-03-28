@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private store: Store<AppState>, private script: ScriptService,) { }
 
   ngOnInit() {
+    this.store.dispatch(loadUser());
     this.script.load('my_mfe').then(() => {
       console.log('loaded script')
     });

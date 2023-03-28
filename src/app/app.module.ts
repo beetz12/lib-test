@@ -21,7 +21,7 @@ import { ScriptService } from './script.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({ items: userReducer }),
+    StoreModule.forRoot({ user: userReducer }),
     EffectsModule.forRoot([UserEffects]),
     StoreDevtoolsModule.instrument()
   ],

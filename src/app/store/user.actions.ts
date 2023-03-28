@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { User } from './app.state';
+import { User } from './user.model';
 
 export const loadUser = createAction('[Item Component] Load User');
 
